@@ -1,0 +1,86 @@
+/* รวมฟอนต์ Kanit */
+
+
+/* การตั้งค่าให้ฟอนต์ทั้งหมดในหน้าใช้ Kanit */
+* {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+/* ตั้งค่า container */
+.container {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* ตั้งค่าสำหรับหัวเรื่อง */
+h2.text-center {
+    color: #4CAF50;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* ปรับสไตล์สำหรับป้าย label */
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* ปรับสไตล์ของ input และ select */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+}
+
+/* สไตล์ปุ่มบันทึกและยกเลิก */
+.btn {
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* กำหนดขนาดของหน้าจอ */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+}
